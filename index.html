@@ -1,0 +1,36 @@
+
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="grid-container centered">
+        <div class="grid=100">
+           <h1>Compare Weather in Different Cities!</h1>
+           <label for="location1">Enter the first location:</label>
+           <input id="location1" type="text"><br>
+           <label for="location2">Enter the second location:</label>
+           <input id="location2" type="text"><br><br>
+
+           <button class="btn-default" id="compareHumidity">Compare Humidity!</button><br>
+
+             <div class="showWeather"></div>
+           <br>
+           <form id="tempForm">
+             <input type="radio" name="temp" value="celsius"> Celsius<br>
+             <input type="radio" name="temp" value="farenheit"> Farenheit<br>
+           </form>
+
+           <button class="btn-default" id="compareTemp">Compare Temperature!</button>
+          <div class="showTemp"></div><br>
+
+            <button class="btn-default" id="compareClouds">Compare average cloudiness over next 5 days.</button>
+            <div class="showClouds"></div>
+
+        </div>
+    </div>
+  </body>
+</html>
